@@ -8,7 +8,6 @@ if __name__ == "__main__":
     dataFolder = "\\data"
     files = os.listdir(currentDirectory + dataFolder)
     filesPath = currentDirectory + dataFolder + "\\"
-    plot = []
     for fileName in files:
         graph = file2Graph(filesPath, fileName)
         vertexCover = VertexCover(graph)
